@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>object</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>OBJECT</h1>
+        <h2>1. create</h2>
+        <script>
+            // cats이라는 변수에 객체를 담는다. 
+            var cats = {
+                "우이동 고양이":"김석관",
+                "중화동 고양이":"최까루"
+            }
+        </script>
+        <h2>2. iterate</h2>
+        <script>
+            for(var key in cats) {
+                document.write(key + ' : ' + cats[key] + '<br>');
+            }
+        </script>
+        <h2>3. property & method</h2>
+        <script>
+            cats.showAll = function {
+                for(var key in cats) {
+                document.write(key + ' : ' + cats[key] + '<br>');
+                } 
+            }
+            cats.showAll();
+        </script>
+    </body>
+    </body>
+</html>
